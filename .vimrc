@@ -21,6 +21,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mhinz/vim-signify'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'maralla/completor.vim'
 " Color Themes
@@ -39,6 +41,11 @@ endif
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 " Use :help 'option' to see the documentation for the given option.
 let &t_SI = "\e[6 q"
