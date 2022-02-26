@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " ------Plugins-------
 Plugin 'kyoz/purify', { 'rtp' : 'vim' }
-Plugin 'sonph/onehalf', { 'rtp' : 'vim' }
+Plugin 'sainnhe/sonokai'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'gcmt/breeze.vim'
@@ -31,7 +31,7 @@ Plugin 'colors'
 call vundle#end()
 set termguicolors
 set background=dark
-colorscheme purify
+colorscheme sonokai
 filetype plugin indent on
 
 """"""""
@@ -133,7 +133,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:did_UltiSnips_vim_after = 1
 
 " vim-airline
-let g:airline_theme='purify'
+let g:airline_theme='sonokai'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#enabled=1
